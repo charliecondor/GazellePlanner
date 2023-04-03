@@ -3,15 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="multimedia/gazelle_logo.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
     <title>Gazelle Planner</title>
 </head>
 <body>
-    <div class="container">
-        <h1></h1>
+    <div id="wrapper" class="container">
+        <div id="header">
+            <div>
+                <img src="multimedia/gazelle_logo.png">
+            </div>
+            <div id="title">
+                <h1>Gazelle Planner</h1>
+                <h2>a Daily Planner Goal Organizer</h2>
+            </div>
+        </div>
+        <div id="navigation" class="container">
+            <nav class="navbar navbar-expand-sm navbar-light bg-light">
+                <a class="navbar-brand" href="#">Gazelle</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Daily</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Calendar</a>
+                        </li>                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Projects</a>
+                        </li>                        
+                    </ul>
+                    
+                </div>
+            </nav>
+        </div>
+        <div id="content" class="container"></div>
     </div>
-    <script src="main.js"></script>
+    <script src="scripts/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
