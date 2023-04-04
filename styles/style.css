@@ -2,14 +2,51 @@ body {
     background-color: rgb(0, 100, 137);
 }
 
-#wrapper {
+.navbar {
+    border-style: ridge;
+    border-color: black;
+}
+
+.btn-primary {
+    background-color: rgb(0, 100, 137);
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+    text-align: center;
+    justify-content: center;
+}
+
+.box {
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    width: 35vw;
+}
+
+.gratitude {
+    grid-column: col 0;
+    grid-row: row 1 / span 2;
+}
+
+.schedule {
+    grid-column: col 1;
+    grid-row: row 1 / span 10;
+}
+
+#body {
     background-color: white;
+    height: 100vh;
 }
 
 #header {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 5%;
 }
 
 #title {
@@ -17,13 +54,13 @@ body {
 }
 
 #title > h1 {
-    padding-left: 10%;
+    padding-left: 5vw;
     margin: 0;
     color: rgb(0, 100, 137);
 }
 
 #title > h2 {
-    padding-left: 10%;
+    padding-left: 5vw;
     margin: 0;
     font-size: 14px;
 }
@@ -32,4 +69,9 @@ body {
     text-align: center;
     justify-content: center;
     width: 100%;
+    margin-bottom: 5%;
+}
+
+#content {
+    text-align: center;
 }
