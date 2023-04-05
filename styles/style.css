@@ -2,6 +2,10 @@ body {
     background-color: rgb(0, 100, 137);
 }
 
+.text_line {
+    margin: 0px;
+}
+
 .navbar {
     border-style: ridge;
     border-color: black;
@@ -23,8 +27,18 @@ body {
 .box {
     border-style: solid;
     border-color: black;
+    background-color: rgb(248, 249, 250);
     border-radius: 10px;
-    width: auto;
+    width: 300px;
+    display: grid;    
+}
+
+.box-title > h1 {
+    font-family: Arial;
+    font-size: larger;
+    text-decoration: underline;
+    background-color: lightgray;
+    border-radius: 6px;
 }
 
 .gratitude {

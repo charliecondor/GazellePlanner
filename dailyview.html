@@ -22,7 +22,6 @@
         <div id="navigation" class="container">
             <nav class="navbar navbar-expand-sm navbar-light bg-light">
                 <a class="navbar-brand" href="index.html"><img src="file:///C:/Users/Charlie/Projects/GazellePlanner/multimedia/gazelle_logo.png" width="32px"></a>
-                
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -33,28 +32,85 @@
                         </li>
                         <li class="nav-item active">
                             <a class="nav-link" href="dailyview.html">Daily</a>
-                        </li> 
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Calendar</a>
-                        </li>                        
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Projects</a>
-                        </li>                        
-                    </ul>                    
+                        </li>
+                    </ul>
                 </div>
             </nav>
         </div>
         <div id="content" class="container wrapper">
-            <div class="box gratitude">Somthing Good in My Life</div>
-            <div class="box sleep">Sleep</div>
-            <div class="box projects">Projects in Focus</div>
-            <div class="box todo">Things to Do</div>
-            <div class="box schedule">Today's Schedule</div>
-            <div class="box formyself">For Myself</div>
-            <div class="box tomorrow">Notes to My Tomorrow Self</div>
+            <div class="box gratitude">
+                <div class="box-title" style="grid-column: 1; grid-row: 1;">
+                    <h1>Somthing Good in My Life</h1>
+                </div>
+                <div style="grid-row: 2; margin-bottom: 10px">
+                    <input name="gratitudeText" type="text" class="text_line"/>
+                </div>
+            </div>
+            <div class="box sleep">
+                <div class="box-title" style="grid-column: 1 / 6; grid-row: 1;">
+                    <h1>Sleep</h1>
+                </div>
+                <div style="grid-column: 1; grid-row: 2;">
+                    <label>Went to Bed</label>
+                </div>
+                <div style="grid-column: 2; grid-row: 2;">
+                    <input type="text" class="text_line" style="width: 40px;"/>
+                </div>
+                <div style="grid-column: 3; grid-row: 2;">
+                    <label>Woke Up</label>
+                </div>
+                <div style="grid-column: 4; grid-row: 2;">
+                    <input type="text" class="text_line" style="width: 40px;"/>
+                </div>
+                <div style="grid-column: 1; grid-row: 3;">
+                    <label>Hours Sleep</label>
+                </div>
+                <div style="grid-column: 2; grid-row: 3;">
+                    <input type="text" class="text_line" style="width: 40px;"/>
+                </div>
+                <div style="grid-column: 3; grid-row: 3;">
+                    <label>I Feel</label>
+                </div>
+                <div style="grid-column: 4; grid-row: 3;">
+                    <input type="text" class="text_line" style="width: 40px;"/>
+                </div>
+                
+            </div>
+            <div class="box projects">
+                <div class="box-title" style="grid-column: 1; grid-row: 1;">
+                    <h1>Projects in Focus</h1>
+                </div>
+            </div>
+            <div class="box todo">
+                <div class="box-title" style="grid-column: 1; grid-row: 1;">
+                    <h1>Things to Do</h1>
+                </div>
+            </div>
+            <div class="box schedule">
+                <div class="box-title" style="grid-column: 1; grid-row: 1;">
+                    <h1>Today's Schedule</h1>
+                </div>
+            </div>
+            <div class="box formyself">
+                <div class="box-title" style="grid-column: 1; grid-row: 1;">
+                    <h1>For Myself</h1>
+                </div>
+            </div>
+            <div class="box tomorrow">
+                <div class="box-title" style="grid-column: 1; grid-row: 1;">
+                    <h1>Notes to My Tomorrow Self</h1>
+                </div>
+            </div>
         </div>
     </div>
     <script src="file:///C:/Users/Charlie/Projects/GazellePlanner/scripts/main.js"></script>
+    <script src="file:///C:/Users/Charlie/Projects/GazellePlanner/scripts/daily.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
