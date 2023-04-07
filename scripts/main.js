@@ -8,6 +8,7 @@ function savePlanner() {
     return true;
 }
 
+
 class GratitudeBox {
     constructor() {
         this.gratitudeText = "";
@@ -72,3 +73,29 @@ class DayInfo {
         this.tomorrowBox = new tomorrowBox();
     }
 }
+
+const today = new Date()
+const todayString = (today.getMonth() + 1) + "/" + today.getDate() + "/" + today.getFullYear();
+console.log(today)
+
+let newDayInfo = new DayInfo(todayString);
+
+const gratitudeInput = document.querySelector("input[name='gratitudeText']");
+
+gratitudeInput.addEventListener("input", newDayInfo.gratitudeBox.updateText);
+
+document.addEventListener('click', function(e) {
+    e = e || window.event;
+    if (e.target.attributes[0].value == "nav-link") {  // for the target element that was clicked on, check the attributes array for the value "nav-link"
+        let nav_items = document.querySelectorAll(".nav-item");  // selects all nav-bar nav-items
+        for (i = 0; i < nav_items.length; i++) {  // for each nav-item
+            nav_items[i].outerHTML = nav_items[i].outerHTML.replace("nav-item active", "nav-item");  // remove the active class to remove the Bootstrap bold effect
+            if (nav_items[i].innerText.trim() == e.target.innerText) {  // trim removes whitespace from nav_items query, compares it against the target inner text (text of the nav-item: Daily, Calendar, Projects)
+                let nav_items = document.querySelectorAll(".nav-item");  // selects all nav-bar nav-items again, need to find out why I need to do this
+                nav_items[i].outerHTML = nav_items[i].outerHTML.replace("nav-item", "nav-item active");  // adds the active class to the nav-item that was clicked
+            }
+        }        
+    } }, false);
+
+console.log(newDayInfo.sleepBox.wenttobedText)
+console.log(newDayInfo.date)
