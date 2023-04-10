@@ -98,10 +98,14 @@ document.addEventListener('click', function(e) {
             }
         }
         let toggle_sections = document.querySelectorAll(".toggles");
-        console.log(toggle_sections);
+        //console.log(nav_clicked.toLowerCase());
         for (i = 0; i < toggle_sections.length; i++) {
-            console.log(toggle_sections[i].outerHTML);            
-        }
+            toggle_sections[i].style.visibility = "hidden";
+            //console.log(toggle_sections[i].id);
+            if (toggle_sections[i].id == nav_clicked.toLowerCase()) {
+                toggle_sections[i].style.visibility = "visible";
+            }
+        }        
     } }, false);
 
 console.log(newDayInfo.sleepBox.wenttobedText)

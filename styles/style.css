@@ -24,6 +24,10 @@ body {
     justify-content: center;
 }
 
+.toggles {
+    position: absolute;
+}
+
 .box {
     border-style: solid;
     border-color: black;
